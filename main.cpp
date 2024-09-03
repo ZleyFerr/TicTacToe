@@ -5,6 +5,8 @@ int main() {
 	int hodnow1 = 1; //Номер хода
 	bool WIN = false; //Была ли победа
 	int hodposition = 0; //Позиция куда поставиться буква по дефолту
+	std::cout << "viberi mesto dlya hoda 1-9" << std::endl;
+	std::cout << " 1 2 3 " << std::endl << " 4 5 6" << std::endl << " 7 8 9" << std::endl;
 	char map[3][3] =
 	{
 	{'#','#', '#'},
@@ -21,8 +23,6 @@ int main() {
 			hodnow = 'X';
 		}
 		//Выбор места для хода
-		std::cout << "viberi mesto dlya hoda 1-9" << std::endl;
-		std::cout << " 1 2 3 " << std::endl << " 4 5 6" << std::endl << " 7 8 9" << std::endl;
 		std::cin >> hodposition;
 		//Фукнция хода
 		switch (hodposition)
